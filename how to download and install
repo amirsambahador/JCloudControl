@@ -4,9 +4,16 @@ download http://j2os.org/jcloudcontrol/CloudControl-1.0.0.jar
 step 2 (INSTALL):
 java -jar CloudControl-1.0.0.jar
 
-step 3 (LOGIN):
+step 3 (DATABASE):
+Create user amirsam identified by myjava123;
+Grant dba to amirsam;
+
+step 4 (RUN):
+${LibertyHome}/bin>server run j2os
+
+step 5 (LOGIN):
 http://localhost:9080/
 
-step 4 (LOGIN INFORMATION):
+step 6 (LOGIN INFORMATION):
 username:admin
 password:admin
